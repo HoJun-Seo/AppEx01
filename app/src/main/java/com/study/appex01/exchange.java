@@ -28,12 +28,15 @@ public class exchange extends AppCompatActivity {
         btnCalc.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                if (doller.getText().toString().equals("")){
+                if (doller.getText().toString().equals("")) {
                     Toast.makeText(exchange.this, "숫자를 입력하세요", Toast.LENGTH_LONG).show();
                     return;
-
-                    int intDoller = Integer.parseInt(doller.getText().toString());
                 }
+
+                int intDoller = Integer.parseInt(doller.getText().toString());
+                int money = intDoller*1200;
+                txtResult.setText(intDoller+"달러="+money+"원 입니다.");
+
             }
         });
     }
