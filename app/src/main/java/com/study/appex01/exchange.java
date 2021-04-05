@@ -2,6 +2,7 @@ package com.study.appex01;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -37,6 +38,11 @@ public class exchange extends AppCompatActivity {
                 int money = intDoller*1200;
                 txtResult.setText(intDoller+"달러="+money+"원 입니다.");
 
+                // 결과값을 다른 액티비티에 전송
+                Intent intent = new Intent(exchange.this, ExchangeResult.class);
+                intent.putExtra("result", txtResult.getText().toString());
+
+                startActivity(intent);
             }
         });
     }

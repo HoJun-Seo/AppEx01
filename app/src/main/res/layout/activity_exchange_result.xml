@@ -5,27 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".exchange">
-
-    <EditText
-        android:id="@+id/doller"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="달러를 입력하세요"
-        android:inputType="number"
-        android:text="0" />
-
-    <Button
-        android:id="@+id/calc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="환율 계산" />
+    tools:context=".ExchangeResult">
 
     <TextView
-        android:id="@+id/txtResult"
+        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="결과"
+        android:text="환율"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/viewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
         android:textSize="24sp" />
 </LinearLayout>
