@@ -4,9 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
-
-import java.util.concurrent.Exchanger;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
 
     // 버튼 클릭 시 수행하는 메소드
     public void mOnclick(View v){
+        Log.d("id", "이벤트 발생시 뷰 구분 : " + String.valueOf(v.getId()));
+
         // Intent 객체를 통해 Activity 이동 및 정보를 보관하여 전달하는 역할
         Intent intent = null;
         switch (v.getId()){
@@ -27,6 +28,10 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.btn2:
                 intent = new Intent(this, exchange.class);
+                break;
+            case R.id.btn3:
+                intent = new Intent(this, BmiActivity.class);
+                break;
         }
         startActivity(intent);
     }

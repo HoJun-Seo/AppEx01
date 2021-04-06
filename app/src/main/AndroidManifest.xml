@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppEx01">
-        <activity android:name=".ExchangeResult"></activity>
+        <activity android:name=".BmiActivityResult"></activity>
+        <activity android:name=".BmiActivity" />
+        <activity
+            android:name=".ExchangeResult"
+            android:label="ExchangeResult" />
         <activity android:name=".ImageViewDemo" />
         <activity android:name=".exchange" />
         <activity android:name=".MainActivity">
