@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppEx01">
-        <activity android:name=".BmiActivityResult"></activity>
+        <activity android:name=".CheckBoxDemo"></activity>
+        <activity android:name=".BmiActivityResult" />
         <activity android:name=".BmiActivity" />
         <activity
             android:name=".ExchangeResult"
