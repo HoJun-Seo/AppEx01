@@ -9,6 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Ex02">
+        <activity android:name=".ArrayListActivity"></activity>
+        <activity android:name=".SpinnerActivity" />
+        <activity android:name=".ListDemo1" />
+        <activity android:name=".GridViewActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
