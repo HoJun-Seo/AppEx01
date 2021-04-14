@@ -21,12 +21,12 @@ public class MainActivity extends AppCompatActivity {
             case R.id.btn1:
                 intent = new Intent(this, ListDemo1.class);
                 break;
-            case R.id.btn2:
-                intent = new Intent(this, ListDemo2.class);
-                break;
-            case R.id.btn3:
-                intent =new Intent(this, ListXml.class);
-                break;
+//            case R.id.btn2:
+//                intent = new Intent(this, ListDemo2.class);
+//                break;
+//            case R.id.btn3:
+//                intent =new Intent(this, ListXml.class);
+//                break;
             case R.id.btn4:
                 intent = new Intent(this,  GridViewActivity.class);
                 break;

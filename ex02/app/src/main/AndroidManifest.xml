@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Ex02">
-        <activity android:name=".ArrayListActivity"></activity>
+        <activity android:name=".PhonebookActivity"></activity>
+        <activity android:name=".AutoActivity" />
+        <activity android:name=".ArrayListActivity" />
         <activity android:name=".SpinnerActivity" />
         <activity android:name=".ListDemo1" />
         <activity android:name=".GridViewActivity" />
