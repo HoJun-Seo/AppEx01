@@ -4,19 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProductAddActivity">
+    tools:context=".ProductEditActivity">
 
     <EditText
         android:id="@+id/editProductName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginLeft="50dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
         android:layout_marginTop="50dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text=""
-        android:hint="상품명을 입력하세요."
+        android:hint="상품명"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -26,35 +26,39 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:ems="10"
-        android:inputType="number"
+        android:inputType="textPersonName"
         android:text=""
-        android:hint="상품 가격을 입력하세요"
+        android:hint="상품명"
         app:layout_constraintStart_toStartOf="@+id/editProductName"
         app:layout_constraintTop_toBottomOf="@+id/editProductName" />
 
     <EditText
-        android:id="@+id/edutProductAmount"
+        android:id="@+id/editProductAmount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="number"
         android:text=""
-        android:hint="상품 수량을 입력하세요."
+        android:hint="가격"
         app:layout_constraintStart_toStartOf="@+id/editProductPrice"
         app:layout_constraintTop_toBottomOf="@+id/editProductPrice" />
 
     <Button
-        android:id="@+id/btnSave"
-        android:layout_width="200dp"
+        android:id="@+id/btnEdit"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="268dp"
-        android:layout_marginRight="268dp"
-        android:text="저장"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/edutProductAmount"
-        app:layout_constraintTop_toBottomOf="@+id/edutProductAmount" />
+        android:layout_marginTop="30dp"
+        android:text="수정"
+        app:layout_constraintStart_toStartOf="@+id/editProductAmount"
+        app:layout_constraintTop_toBottomOf="@+id/editProductAmount" />
 
+    <Button
+        android:id="@+id/btnDel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="삭제"
+        app:layout_constraintEnd_toEndOf="@+id/editProductAmount"
+        app:layout_constraintTop_toBottomOf="@+id/editProductAmount" />
 </androidx.constraintlayout.widget.ConstraintLayout>

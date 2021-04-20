@@ -12,6 +12,8 @@ public class ProductDTO implements Serializable {
     // Alt+Insert(생성자, Getter, Setter, toString() )
 
     // 생성자 작성(인자있는경우, 없는경우 모두)
+
+
     public ProductDTO() {
     }
 
